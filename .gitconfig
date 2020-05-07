@@ -1,0 +1,9 @@
+[user]
+name = Tomasz Uryga
+email = tomaszuryga1331@gmail.com\
+username = tomaszuryga1331
+[merge]
+tool = meld
+conflictstyle = diff3
+[mergetool "meld"]
+cmd = meld $LOCAL $BASE $REMOTE -o $MERGED --diff $BASE $LOCAL --diff $BASE $REMOTE --auto-merge
