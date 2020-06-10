@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jedzonko.Common\Jedzonko.Common.csproj" />
+    <ProjectReference Include="..\Jedzonko.Domain\Jedzonko.Domain.csproj" />
+    <ProjectReference Include="..\Jedzonko.IData\Jedzonko.IData.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DAO\" />
+  </ItemGroup>
+
+</Project>

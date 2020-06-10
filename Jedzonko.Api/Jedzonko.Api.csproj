@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Jedzonko.Common\Jedzonko.Common.csproj" />
+    <ProjectReference Include="..\Jedzonko.Data.Sql\Jedzonko.Data.Sql.csproj" />
+    <ProjectReference Include="..\Jedzonko.IServices\Jedzonko.IServices.csproj" />
+    <ProjectReference Include="..\Jedzonko.Services\Jedzonko.Services.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "b34a0d44-46dc-4007-85b7-addcc765f8fa",
+		"name": "zadanie 7",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44313/api/v2/user/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44313/api/v2/user/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"v2",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44313/api/v2/user/name/uzytkownik2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44313/api/v2/user/name/uzytkownik2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"v2",
+						"user",
+						"name",
+						"uzytkownik2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44313/api/v2/user/name/uzytkownik2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"UserName\":\"Klawitur\",\n\"Email\":\"klawiatura@wp.pl\",\n\"Imie\":\"Kuba\",\n\"Nazwisko\":\"Klawiturek\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44313/api/v2/user",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44313/api/v2/user/edit/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"UserName\":\"Makarończyk\",\n\"Email\":\"pizzapizza@gmail.com\",\n\"Imie\":\"Marek\",\n\"Nazwisko\":\"Mostowiak\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44313/api/v2/user/edit/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"v2",
+						"user",
+						"edit",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
